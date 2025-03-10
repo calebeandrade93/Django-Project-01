@@ -43,6 +43,8 @@ ALLOWED_HOSTS = [
 	'127.0.0.1',  
 ]
 
+AUTH_USER_MODEL = "contas.MyUser" 
+
 ## Application definition ##
 DJANGO_APPS = [ 
     'django.contrib.admin',
@@ -61,7 +63,8 @@ THIRD_APPS = [
 # São os apps que criamos no projeto 
 PROJECT_APPS = [ 
         'apps.base',		
-        'apps.pages',   
+        'apps.pages',
+		'apps.contas'   
 ]
 
 # INSTALLED_APPS é a variavel que django entende para fazer a leitura dos aplicativos.
